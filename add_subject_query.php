@@ -28,10 +28,25 @@
 				$values.="," . quote($_POST["tool"]);
 			}
 			
+			if( !empty($_POST["relate_subject"]) ) {
+				$query .=",relateSubject";
+				$values.="," . quote($_POST["relate_subject"]);
+			}
+			
+			sendQuery($conn,$query.") ".$values.")");
+		}
+		
+		if( !empty($_POST["prereq_subject"]) ) {
+			$query = "INSERT INTO PreqSubject (subject";
+			$values= "VALUES(". quote($_POST["code"]);
+			
+			$query .=",preqSubject";
+			$values.="," . quote($_POST["prereq_subject"]);
+			
 			sendQuery($conn,$query.") ".$values.")");
 		}
 	}
 ?>
 
-<?php echo "<script>window.location.replace('main_page.html');</script>";?> 
+<?php echo "<script>window.location.replace('index.html');</script>";?> 
 
