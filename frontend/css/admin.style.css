@@ -1,0 +1,74 @@
+.setting_block{
+	width:100%; height:100%;
+	padding:3px;
+}
+
+.setting_block_left{
+	float:left;
+	width:60%;
+	padding:5px;
+	border-right:solid 1px #D8D8D8;
+	border-bottom:solid 1px #D8D8D8;
+}
+.setting_block_right{
+	float:left;
+	width:35%;
+	padding:5px;
+	border-right:solid 1px #D8D8D8;
+	border-bottom:solid 1px #D8D8D8;
+}
+
+.setting_title{
+	font-size:15pt;
+	widht:100%;
+	border-bottom:solid 1px gray;
+}
+
+#mil_subject_table{
+	width:960px;
+}
+
+#mil_subject_table thead td{
+	width:120px; height:20px;
+	text-align:left;
+}
+
+#mil_subject_table thead td div{
+	width: 40px; height:22px;
+	text-align:center;
+	background:#D8D8D8;
+	border-radius: 4px;
+}
+
+#mil_subject_table tbody td{
+	width:118px; height:48px;
+	border:solid 1px #D8D8D8;
+}
+
+#mil_subject_table tbody td div{	
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width:118px; height:28.76px;a
+	background:#D8D8D8;
+	border-radius: 10px;
+	z-index:1;
+}
+
+#mil_create_subject_form{
+	width:100%;
+	border:solid 1px #D8D8D8;
+}
+
+#regidit_subject_type{
+	display:none;
+}
+
+div.view_color{
+	width:30px; height:30px;
+	float:left;
+}
+
+.clicked div{
+	background:#ff4d40;
+}
