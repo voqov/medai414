@@ -1,0 +1,784 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+/*
+Theme Name: MIL Editor Theme
+Author: voQov
+Description: MIL �뀒留�
+Version: 1.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* -webkit-box-sizing: border-box; */
+    /* -moz-box-sizing: border-box; */
+    /* box-sizing: border-box; */
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #57585a;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    cursor: auto;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans Gothic', Verdana, Arial, sans-serif;
+}
+
+img, video {
+    width: 100%;
+}
+
+#wrap {
+    /* display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    flex-flow:row wrap;
+    width:1800px;
+    font-size:12pt;
+    overflow-x:hidden; */
+}
+
+/***************** header ********************/
+
+#header_wrap {
+    /* padding-top: 4px; */
+    order:1;
+    width: 100%;
+    height: 53px;
+    /* background: #000000; */
+}
+
+#header {
+    /* display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    flex-flow:row; */
+    /* padding-top: 4px; */
+    width: 100%;
+    height: 100%;
+    /*margin:0 auto;*/
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+}
+
+#homepage_title {
+    /* order:1; */
+    float: left;
+    height: 100%;
+    padding-left: 40px;
+    /* padding: 0 16px; */
+    /* text-align: right; */
+}
+
+#homepage_title a:link, #homepage_title a:visited, #homepage_title a:active, #homepage_title a:hover {
+    background: transparent;
+    font: bold 14pt 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+#login {
+    /* order:3; */
+    float: right;
+    height: 100%;
+    padding: 0 16px;
+}
+
+#login ul {
+    font-size: 14pt;
+    list-style: none;
+}
+
+#login li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#login a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+#login a:link, #login a:visited {
+    color: #efefef;
+}
+
+#login a:active, #login a:hover {
+    color: #404042;
+}
+
+#main_nav {
+    /* order:2; */
+    float: right;
+    text-align: right;
+}
+
+.menu-a_main_menu-container {height: 53px;}
+
+#main_nav ul {
+    font-size: 21pt;
+    list-style: initial;
+    margin-right: 40px;
+    background-color: white;
+}
+
+#main_nav li {
+    
+           /* display 속성 추가 */
+        /* vertical-align 속성 추가 */
+    
+padding: 0 15px;
+    
+line-height: 53px;
+    
+position: relative;
+    
+height: 53px;
+    
+float: left;
+    
+display: block;
+}
+
+#main_nav a {
+    text-decoration: none;
+}
+
+#main_nav a span {vertical-align: middle;}
+
+#main_nav a:link, #main_nav a:visited {
+    color: #252525;
+}
+
+#main_nav a:active, #main_nav a:hover {
+    color: #404042;
+}
+
+/***************** index ********************/
+
+@media all and (min-width: 1920px) {
+    /* 1920px 이상 해상도에서 실행할 CSS 코드를 여기에 작성 */
+    #container {
+        overflow-y: hidden;
+        width: 1920px;
+        height: 850px;
+        //front_page . png height & & mil_subject_table height
+    }
+
+    #content.primary {
+        /* background-image: url("images/front_page.png"); */
+        /* background-size: 100%; */
+        /* height: 100%; */
+        /* background-repeat: no-repeat; */
+    }
+
+    #content_wrap {
+        /* order:2; */
+        float: left;
+        width: 64%;
+        height: 100%;
+        border-right: 1px dotted #919296;
+        border-left: 1px dotted #919296;
+        box-sizing: border-box;
+    }
+
+    section.sides {
+        background-color: #252525;
+        width: 16.8125%;
+        height: 1111px;
+        padding: 0.5% 0.5% 0;
+        /* float:left; */
+    }
+}
+
+@media all and (max-width: 1919px) {
+    /* 1024px 이상 1920미만 해상도에서 실행할 CSS 코드를 여기에 작성 */
+    #container {
+        overflow-y: hidden;
+    }
+
+    #content.primary {
+    }
+
+    section.sides .side_title {
+        font: 800 15pt 'Open Sans', sans-serif !important;
+    }
+
+    section.sides ul.side_list li.list_container ul li {
+        font-size: 14px;
+    / / side1
+    }
+
+    section.sides li {
+        font-size: 14px;
+    / / side2
+    }
+
+    #content_wrap {
+        border: 1px solid #252525;
+        border-top: 0px;
+        overflow: hidden;
+        float: left;
+        width: 68%;
+        box-sizing: border-box;
+    }
+
+    section.sides {
+        background-color: #252525;
+        width: 15%;
+        height: 844.26px;
+        padding: 0.5% 0.5% 0;
+    }
+}
+
+#home-wrap {
+    width: 100%;
+    height: 1028px;
+}
+
+#entrance-logo {
+    position: relative;
+    width: 100%;
+    height: 534px;
+    background-color: rgba(0,0,0, 0.7);
+    margin-bottom: 39px;
+}
+
+#entrance-logo img {
+    width: 806px;
+    height: 115px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -57.5px;
+    margin-left: -403px;
+}
+
+#entrance-menus {display: table;margin: 0 auto;}
+
+#entrance-menus div.entrance-menu {
+    float: left;
+    width: 250px;
+    height: 420px;
+    transition:0.8s;
+    cursor: pointer; 
+}
+
+#entrance-menus div.entrance-menu:hover {
+    box-shadow:
+			400px 0 0 0  rgba(0,0,0,0.15) inset, 
+			-400px 0 0 0  rgba(0,0,0,0.15) inset;
+}
+
+#footer {float: right;height: 34px;width: 100%;background-color: rgba(0,0,0,1);}
+
+#container {
+    display: block;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    min-height: 850px;
+    min-width: 850px;
+}
+
+/***************** footer ********************/
+
+/* #footer {
+background:#fff;
+border-top:1px solid #a8b772;
+}
+
+#footer a {
+font-size:.9em;
+text-decoration:none;
+} */
+
+/***************** side ********************/
+
+section.sides .side_title {
+    font: 800 16pt 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+section.sides hr {
+    border: 1px solid #6d6e70;
+    margin-top: 4px;
+}
+
+section.sides ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+section.sides ul.side_list li {
+    margin-bottom: 16px;
+    color: white;
+}
+
+section.sides ul.side_list li.list_container ul {
+    padding-left: 16px;
+    margin-top: 8px;
+}
+
+section.sides ul.side_list ul.menu li.menu-item:hover {
+    background: #efefef;
+    color: #404042;
+}
+
+section.sides ul.side_list ul.menu li.current-menu-item a {
+    color: #ff4d40;
+    font-weight: bold;
+}
+
+/*******************
+ * Style : side1
+ *******************/
+
+section#side1 {
+    text-align: right;
+    float: left;
+}
+
+/*******************
+ * Style : side2
+ *******************/
+
+section#side2 {
+    float: right;
+    /* drag */
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+section#side2 ul.side_list li.list_container ul.menu li.menu-item {
+    display: none;
+    font-size: 0.95em;
+    white-space: nowrap;
+}
+
+section#side2 ul.side_list ul.menu li.menu-item:before {
+    content: "● ";
+}
+
+section#side2 ul.side_list li.list_container:hover ul.menu li.menu-item {
+    display: block;
+}
+
+section#side2 ul.side_list li.list_container ul.menu li.current-menu-item {
+    display: block;
+}
+
+/*******************
+ * Style : side2 industry list
+ *******************/
+
+section#side2 div#right2 ul.side_list ul.menu li.menu-item {
+    display: block;
+    font-weight: bold;
+}
+
+section#side2 div#right2 {
+    display: none;
+}
+
+/*******************
+	�씠 �븘�옒濡쒕뒗 greenapple �젣�옉�옄�쓽 肄붾뱶�엯�땲�떎
+********************/
+
+.entry-content table th {
+    padding: 10px;
+}
+
+.entry-content table td {
+    padding: 4px 10px;
+}
+
+#drag-icon-left {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    opacity: 0.3;
+    bottom: 30%;
+    left: 92%;
+    width: 5%;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+    -o-filter: invert(100%);
+}
+
+#drag-icon-right {
+    display: none;
+    z-index: 2;
+    -ms-transform: scale(-1,1);
+    -webkit-transform: scale(-1,1);
+    transform: scale(-1,1);
+    position: fixed;
+    opacity: 0.3;
+    bottom: 30%;
+    left: 2%;
+    width: 5%;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+    -o-filter: invert(100%);
+}
+
+#slide_area {
+    position: relative;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.widget_title, .side_title {
+    cursor: default;
+}
+
+
+/****** Industry-Insight ******/
+@media (max-width: 1919px) {
+    #industry_insight_content_wrap {
+        display: none;
+        z-index: -1;
+        width: 84%;
+        height: 811px;
+        margin-bottom: 20px;
+        position: absolute;
+        right: 0;
+        background-color: #ffffff;
+    }
+}
+
+@media (min-width: 1920px) {
+    #industry_insight_content_wrap {
+        display: none;
+        z-index: -1;
+        width: 82.325%;
+        height: 811px;
+        margin-bottom: 20px;
+        position: absolute;
+        right: 0;
+        background-color: #ffffff;
+    }
+}
+
+#mentor-videos {}
+
+/* carousel */
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {background-image:none;}
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -100%; }
+    .carousel-inner .next        { left:  100%; }
+    .carousel-inner .prev		 { left: -100%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		 { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .carousel-inner .active.left { left: -25%; }
+    .carousel-inner .next        { left:  25%; }
+    .carousel-inner .prev		 { left: -25%; }
+}
+
+/* extension of Bootstrap Grid System */
+.col-xs-offset-right-12 {
+    margin-right: 100%;
+}
+.col-xs-offset-right-11 {
+    margin-right: 91.66666667%;
+}
+.col-xs-offset-right-10 {
+    margin-right: 83.33333333%;
+}
+.col-xs-offset-right-9 {
+    margin-right: 75%;
+}
+.col-xs-offset-right-8 {
+    margin-right: 66.66666667%;
+}
+.col-xs-offset-right-7 {
+    margin-right: 58.33333333%;
+}
+.col-xs-offset-right-6 {
+    margin-right: 50%;
+}
+.col-xs-offset-right-5 {
+    margin-right: 41.66666667%;
+}
+.col-xs-offset-right-4 {
+    margin-right: 33.33333333%;
+}
+.col-xs-offset-right-3 {
+    margin-right: 25%;
+}
+.col-xs-offset-right-2 {
+    margin-right: 16.66666667%;
+}
+.col-xs-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+.col-xs-offset-right-0 {
+    margin-right: 0;
+}
+@media (min-width: 768px) {
+    .col-sm-offset-right-12 {
+        margin-right: 100%;
+    }
+    .col-sm-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+    .col-sm-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+    .col-sm-offset-right-9 {
+        margin-right: 75%;
+    }
+    .col-sm-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+    .col-sm-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+    .col-sm-offset-right-6 {
+        margin-right: 50%;
+    }
+    .col-sm-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+    .col-sm-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+    .col-sm-offset-right-3 {
+        margin-right: 25%;
+    }
+    .col-sm-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+    .col-sm-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+    .col-sm-offset-right-0 {
+        margin-right: 0;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-offset-right-12 {
+        margin-right: 100%;
+    }
+    .col-md-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+    .col-md-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+    .col-md-offset-right-9 {
+        margin-right: 75%;
+    }
+    .col-md-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+    .col-md-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+    .col-md-offset-right-6 {
+        margin-right: 50%;
+    }
+    .col-md-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+    .col-md-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+    .col-md-offset-right-3 {
+        margin-right: 25%;
+    }
+    .col-md-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+    .col-md-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+    .col-md-offset-right-0 {
+        margin-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-offset-right-12 {
+        margin-right: 100%;
+    }
+    .col-lg-offset-right-11 {
+        margin-right: 91.66666667%;
+    }
+    .col-lg-offset-right-10 {
+        margin-right: 83.33333333%;
+    }
+    .col-lg-offset-right-9 {
+        margin-right: 75%;
+    }
+    .col-lg-offset-right-8 {
+        margin-right: 66.66666667%;
+    }
+    .col-lg-offset-right-7 {
+        margin-right: 58.33333333%;
+    }
+    .col-lg-offset-right-6 {
+        margin-right: 50%;
+    }
+    .col-lg-offset-right-5 {
+        margin-right: 41.66666667%;
+    }
+    .col-lg-offset-right-4 {
+        margin-right: 33.33333333%;
+    }
+    .col-lg-offset-right-3 {
+        margin-right: 25%;
+    }
+    .col-lg-offset-right-2 {
+        margin-right: 16.66666667%;
+    }
+    .col-lg-offset-right-1 {
+        margin-right: 8.33333333%;
+    }
+    .col-lg-offset-right-0 {
+        margin-right: 0;
+    }
+}
+
+.carousel-inner .item span {
+    display: block;
+    padding-top: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+#industry-list-inner {padding: 0 5% 2% 5%;overflow: hidden;font-size: 0px;letter-spacing: 0px;word-spacing: 0px;}
+
+#industry-list { overflow: hidden; }
+
+#industry-list .item {
+    
+width: 90px;
+    
+display: inline-block;
+    
+vertical-align: middle;
+    
+padding: 0 20px;
+}
+
+#industry-news {
+    overflow: hidden;
+}
+
+.rss-item-wrap {
+    float: left;
+    width: 19%;
+    padding: 0 0.5%;
+}
+
+.rss-item {margin-bottom: 15px;font-size: 16px;}
+
+.rss-item a {color: blue;}
+
+.rss-item span {
+    font-size: 14px;
+    color: silver;
+}
+
+#industry-news-inner {
+    position: relative;
+    width: 500%;
+}
+
+#main_nav li:hover > ul.sub-menu {
+    display: block;
+}
+
+.sub-menu { /* this targets all sub menus */
+
+display: none; /* hide all sub menus from view */
+
+position: absolute;
+
+left: 0;
+
+z-index: 5;
+
+ /* this should be the same height as the top level menu -- height + padding + borders */
+
+padding-top: 1px;
+}
+
+.sub-menu li { /* this targets all submenu items */
+
+ /* overwriting our float up above */
+
+     /* set to the width you want your sub menus to be. This needs to match the value we set below */
+
+width: 120px;
+
+border-collapse: collapse;
+
+border: 1px solid rgba(0,0,0,0.7);
+}
+
+.sub-menu li:last-child { border-top: 0; }
+
+.sub-menu li a:hover { color: #252525; }
+
+.sub-menu li a { /* target all sub menu item links */
+
+ /* give our sub menu links a nice button feel */
+
+white-space: nowrap;
+
+font-size: 17px;
+
+float: left;
+}

@@ -1,0 +1,108 @@
+body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited {color: #666}
+body#tinymce.wp-editor a:active, body#tinymce.wp-editor a:hover {color: #a8b77s;}
+body#tinymce.wp-editor small {
+    font-size:.9em;
+    line-height:1.5em
+}
+
+body#tinymce.wp-editor p, body#tinymce.wp-editor ul li, body#tinymce.wp-editor ol li {font-size: 1.4em;font-family: Helvetica,Arial,Sans-Serif;}
+
+body#tinymce.wp-editor h1,body#tinymce.wp-editor h2,body#tinymce.wp-editor h3 {
+    font-family:Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif;
+    font-weight:500
+}
+
+body#tinymce.wp-editor h1 {
+    font-size:1.6em;
+    margin-bottom:20px
+}
+body#tinymce.wp-editor h3 {
+    font-size:1em;
+    margin-bottom:10px;
+    color:#a8b772
+}
+
+body#tinymce.wp-editor h1, body#tinymce.wp-editor h1 a, body#tinymce.wp-editor h1 a:hover, body#tinymce.wp-editor h1 a:visited {
+    text-decoration:none;
+    color:#999
+}
+
+body#tinymce.wp-editor .more-link {
+    font-weight:600;
+    font-size:1em
+}
+
+body#tinymce.wp-editor ul {
+	list-style-image: url(images/bullet.gif);
+	list-style-type: disc;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+
+	}
+
+
+body#tinymce.wp-editor ol {
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+
+body#tinymce.wp-editor code {
+    font:1.1em 'Courier New',Courier,Fixed
+}
+
+body#tinymce.wp-editor acronym,body#tinymce.wp-editor abbr,body#tinymce.wp-editor span.caps {
+    font-size:.9em;
+    letter-spacing:.07em;
+    border:none;
+    cursor:help
+}
+
+body#tinymce.wp-editor h2 a:hover, body#tinymce.wp-editor h3 a:hover {
+    color:#a8b772;
+    text-decoration:none
+}
+body#tinymce.wp-editor dl {
+    clear:both;
+    display:block;
+    text-align:center;
+    font-size:1.1em;
+    margin:15px
+}
+
+body#tinymce.wp-editor dl dt {
+    left:0;
+    width:110px;
+    font-weight:600;
+    float:left;
+    text-align:left;
+    margin-bottom:5px;
+    padding:0
+}
+
+body#tinymce.wp-editor dd {
+    border-left:1px solid #ccc;
+    width:auto;
+    text-align:left;
+    margin:0 0 10px 130px;
+    padding:0 0 1em 1em
+}
+
+body#tinymce.wp-editor table {
+margin-bottom:15px;
+}
+
+body#tinymce.wp-editor table th,body#tinymce.wp-editor table td {
+border:1px solid #ccc;
+border-collapse:collapse;
+}
+
+body#tinymce.wp-editor table th {
+background:#fff url(images/tab-background.gif) repeat-x bottom;
+font-weight:600;
+padding:10px;
+}
+
+body#tinymce.wp-editor table td {
+padding:4px 10px;
+}
