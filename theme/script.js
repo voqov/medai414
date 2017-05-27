@@ -1,4 +1,5 @@
 //for drag effect
+// commit test
 var animLeftEnd = {opacity: 0.6, left: "90%"},
     animLeftStart = {opacity: 0, left: "92%"},
     animRightEnd = {opacity: 0.6, left: "4%"},
